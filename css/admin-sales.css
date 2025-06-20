@@ -1,0 +1,145 @@
+body {
+    width: 100%;
+    height: 100vh;
+}
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    /* filter: brightness(50%); */
+}
+a {
+    text-decoration: none;
+}
+/* This is for Modal that opens up then details is pressed */
+.modal-sale-details {
+    height: 70vh;
+    width: 50vw;
+    position: fixed;
+    z-index: 99;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background: #fff;
+    box-shadow: 0px 4px 4px 10px rgba(0, 0, 0, 0.25);
+    overflow: auto;
+}
+.container-modal-header {
+    height: 10.5rem;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+    align-items: center;
+}
+.container-modal-header p {
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.btn-receipt {
+    width: 14.125rem;
+    height: 3.5625rem;
+    border-radius: 0.9375rem;
+    background: #9b0808;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-modal-details {
+    padding: 0;
+    margin: 0;
+}
+.modal-detail {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
+}
+.modal-detail p {
+    margin: 0;
+    width: auto;
+}
+.modal-detail-col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+.modal-detail-box {
+    flex: 0 0 auto;
+    padding: 0 0.6rem 0 0.6rem;
+    width: fit-content;
+    border: 1.5px solid #a5a5a5;
+}
+/* This is for sale navigation, the one with jpcs, csc, progden, ssite */
+.container-sales {
+    flex-grow: 1;
+    overflow: auto;
+    background-color: #fff;
+}
+.sales-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1rem 1rem 1rem 1rem;
+    height: 7.5rem;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    list-style: none;
+    align-items: center;
+}
+.sales-nav-li {
+    color: #000;
+    text-align: center;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+/* This if for transactin style itself */
+.sales {
+    height: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem 0 6rem;
+}
+.sales p {
+    margin: 0;
+}
+.sales:nth-child(even) {
+    background: #d9d9d9;
+}
+.sales-button {
+    width: 8.5rem;
+    height: 3.5625rem;
+    border-radius: 0.9375rem;
+    background: #9b0808;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}

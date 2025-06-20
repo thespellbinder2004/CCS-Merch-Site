@@ -1,0 +1,121 @@
+ul {
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    border: none;
+}
+.no-items {
+    height: 50vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container-archive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.container-product {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 3rem 0 3rem;
+}
+.product-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.product-li p {
+    margin: 1rem 0 0 0;
+    width: 22.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.product-img {
+    width: 22.25rem;
+    height: 27.4375rem;
+}
+
+.header-product {
+    text-align: center;
+    font-family: "Road Rage", Courier, monospace;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+@media (max-width: 840px) {
+    .container-product {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        padding: 0 2.5rem 0 2.5rem;
+    }
+    .header-product {
+        font-size: 6rem;
+    }
+    .product-li p {
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
+        width: 15.575rem;
+    }
+    .product-img {
+        width: 15.575rem;
+        height: 19.2063rem;
+    }
+}
+@media (max-width: 630px) {
+    .header-product {
+        font-size: 4rem;
+    }
+    .product-li p {
+        font-size: 0.8rem;
+        margin: 0.7rem 0 0 0;
+        width: 11.125rem;
+    }
+    .product-img {
+        width: 11.125rem;
+        height: 13.7188rem;
+    }
+    .container-product {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        padding: 0 1rem 0 1rem;
+    }
+}
+@media (max-width: 452px) {
+    .header-product {
+        font-size: 3rem;
+    }
+    .product-li p {
+        font-size: 0.8rem;
+        margin: 0.3rem 0 0 0;
+        width: 8.9rem;
+    }
+    .product-img {
+        width: 8.9rem;
+        height: 10.975rem;
+    }
+    .container-product {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        padding: 0 1rem 0 1rem;
+    }
+}

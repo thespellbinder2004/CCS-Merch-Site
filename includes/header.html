@@ -1,0 +1,100 @@
+<head>
+    <link rel="stylesheet" href="css/header.css" />
+    <script defer src="scripts/header.js"></script>
+    <script defer src="scripts/cart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Road+Rage&family=Saira+Stencil+One&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<div class="window-overlay window-overlay-closed"></div>
+<!-- This is for cart -->
+<div class="container-cart">
+    <div class="container-cart-header">
+        <h1 id="heading-cart">Cart</h1>
+        <a class="btn-close-cart" href=""></a>
+        <p class="cart-num-items"></p>
+    </div>
+    <ul class="container-cart-items"></ul>
+    <div class="container-cart-checkout">
+        <div class="cart-subtotal">
+            <p>Subtotal:</p>
+            <p class="subtotal">₱ 69,420</p>
+        </div>
+        <a class="btn-cart-checkout" href="/CCS_merch_site/check-out2.php"
+            >Check Out</a
+        >
+    </div>
+</div>
+
+<!-- This is the Header -->
+<header>
+    <a class="btn-menu-a" href=""
+        ><img class="btn-menu" src="Assets/icons/menu-icon.svg" alt=""
+    /></a>
+
+    <a
+        href="/CCS_merch_site/landing_page.php"
+        class="container-header-logo"
+    >
+        <img class="red-hawks-logo" src="Assets/Red_Hawks_Logo.png" alt="" />
+        <p id="ccs-logo-text">CCS Merch Shop</p>
+    </a>
+    <ul class="container-navigation">
+        <a class="nav-items" href="landing_page.php"
+            ><li class="nav-items-li">Home</li></a
+        >
+        <a
+            class="nav-items"
+            href="/CCS_merch_site/archive-product.php?seller=csc"
+            ><li class="nav-items-li">CSC</li></a
+        >
+        <a
+            class="nav-items"
+            href="/CCS_merch_site/archive-product.php?seller=jpcs"
+            ><li class="nav-items-li">JPCS</li></a
+        >
+        <a
+            class="nav-items"
+            href="/CCS_merch_site/archive-product.php?seller=ssite"
+            ><li class="nav-items-li">SSITE</li></a
+        >
+        <a
+            class="nav-items"
+            href="/CCS_merch_site/archive-product.php?seller=progden"
+            ><li class="nav-items-li">ProgDen</li></a
+        >
+    </ul>
+
+    <a id="btn-cart" href="">
+        <img id="cart-logo" src="Assets/cart_logo.png" alt="" />
+        <div class="cart-logo-num-items">5</div>
+    </a>
+</header>
+<ul class="container-navigation-responsive hide-menu">
+    <a class="nav-items" href="landing_page.php"
+        ><li class="nav-items-li">Home</li></a
+    >
+    <a
+        class="nav-items"
+        href="/CCS_merch_site/archive-product.php?seller=csc"
+        ><li class="nav-items-li">CSC</li></a
+    >
+    <a
+        class="nav-items"
+        href="/CCS_merch_site/archive-product.php?seller=jpcs"
+        ><li class="nav-items-li">JPCS</li></a
+    >
+    <a
+        class="nav-items"
+        href="/CCS_merch_site/archive-product.php?seller=ssite"
+        ><li class="nav-items-li">SSITE</li></a
+    >
+    <a
+        class="nav-items"
+        href="/CCS_merch_site/archive-product.php?seller=progden"
+        ><li class="nav-items-li">ProgDen</li></a
+    >
+</ul>

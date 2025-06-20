@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter;
+}
+html {
+    width: 49.5625rem;
+    height: 70.375rem;
+    margin: auto;
+}
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 49.5625rem;
+    height: 70.375rem;
+}
+
+main {
+    width: 49.5625rem;
+    height: 70.375rem;
+    background: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+    padding: 2rem;
+    color: #000;
+}
+.receipt-title {
+    margin: 0;
+    text-align: center;
+
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+table {
+    align-self: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+th,
+td {
+    padding: 0 0.5rem 0 0.5rem;
+}
+tr {
+    height: 2.625rem;
+}
+.receipt-buyer-info p {
+    margin: 0.2rem;
+}
+tr:nth-child(even) {
+    background: #b8b8b8;
+}
+.th-qty {
+    width: 5%;
+}
+.th-description {
+    width: 65%;
+}
+.th-unit-price {
+    width: 15%;
+}
+.th-amount {
+    width: 15%;
+}
+
+.td-qty {
+    text-align: center;
+}
+.td-description {
+}
+.td-unit-price {
+    text-align: center;
+}
+.td-amount {
+    text-align: center;
+}

@@ -1,0 +1,300 @@
+ul {
+    padding: 0;
+}
+.banner-slider {
+    width: 91vw;
+    height: 32vw;
+    border-radius: 2.1875rem;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    /* IN THE END */
+    overflow: hidden;
+}
+.banner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* THIS creates the animation! */
+    transition: transform 1s;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+.btn-slider {
+    height: 100%;
+    width: 10rem;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+.btn-slider:hover {
+    background-color: rgba(0, 0, 0, 0.21);
+    cursor: pointer;
+}
+.btn-slider-right {
+    right: 0;
+}
+.btn-slider img {
+    width: 50%;
+    height: 50%;
+}
+.btn-slider-left img {
+    transform: scaleX(-1);
+}
+.btn-view-merch {
+    display: flex;
+
+    width: 18.1875rem;
+    height: 3.1875rem;
+    border-radius: 0.9375rem;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    border: none;
+    position: absolute;
+}
+.exclusive-bundles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+.apparel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+    background: #7a0909;
+}
+.apparel * {
+    color: white;
+}
+.accessories {
+    background: #5f5f5f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+.accessories * {
+    color: white;
+}
+.container-product {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 3rem 0 3rem;
+}
+.product-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.product-li p {
+    margin: 1rem 0 0 0;
+}
+.product-img {
+    width: 22.25rem;
+    height: 27.4375rem;
+}
+
+.header-product {
+    text-align: center;
+    font-family: "Road Rage", Courier, monospace;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.btn-view-all {
+    margin-top: 3rem;
+    width: 19.0625rem;
+    height: 3.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.9375rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.btn-view-all-exclusive-product {
+    background: #670002;
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.btn-view-all-apparel {
+    background: #fff;
+    color: #670002;
+    text-align: center;
+    font-family: Poppins;
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.btn-view-all-accessories {
+    background: #fff;
+    color: black;
+    text-align: center;
+    font-family: Poppins;
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+@media (max-width: 840px) {
+    .banner-slider {
+        display: none;
+    }
+    .container-org-icons-responsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0 2rem 0 2rem;
+        margin-top: 10rem;
+        margin-bottom: 15rem;
+    }
+    .org-icon {
+        width: 9rem;
+        height: 9rem;
+        flex-shrink: 0;
+        border-radius: 50%;
+    }
+    #org-icon-csc {
+        background: url(../Assets/footer-icons/csc.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #org-icon-jpcs {
+        background: url(../Assets/footer-icons/jpcs.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #org-icon-ssite {
+        background: url(../Assets/footer-icons/ssite.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #org-icon-progden {
+        background: url(../Assets/footer-icons/progden.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .container-product {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        padding: 0 2.5rem 0 2.5rem;
+    }
+    .header-product {
+        font-size: 6rem;
+    }
+
+    .product-li p {
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
+    }
+    .product-img {
+        width: 15.575rem;
+        height: 19.2063rem;
+    }
+    .btn-view-all {
+        margin-top: 2rem;
+        width: 16.2031rem;
+        height: 2.8688rem;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 630px) {
+    .header-product {
+        font-size: 4rem;
+    }
+    .product-li p {
+        font-size: 0.8rem;
+        margin: 0.7rem 0 0 0;
+    }
+    .product-img {
+        width: 11.125rem;
+        height: 13.7188rem;
+    }
+    .container-product {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        padding: 0 1rem 0 1rem;
+    }
+    .btn-view-all {
+        margin-top: 2rem;
+        width: 12.3906rem;
+        height: 2.1938rem;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 452px) {
+    .org-icon {
+        height: 7rem;
+        width: 7rem;
+    }
+    .header-product {
+        font-size: 3rem;
+    }
+    .product-li p {
+        font-size: 0.8rem;
+        margin: 0.3rem 0 0 0;
+    }
+    .product-img {
+        width: 8.9rem;
+        height: 10.975rem;
+    }
+    .container-product {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        padding: 0 1rem 0 1rem;
+    }
+}

@@ -1,0 +1,356 @@
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+/* This is for sidebar */
+.admin-sidebar {
+    width: 25%;
+    height: 100%;
+    background: #670002;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-header {
+    color: #fff;
+    text-align: center;
+    font-family: "Saira Stencil One";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 2rem 0 2rem 0;
+}
+.sidebar-menus {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.menu:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.1);
+}
+.menu {
+    cursor: pointer;
+    height: 6.3125rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ------------------------------------------------- */
+/* This is for Add Product */
+.container-add-product {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.toolbar {
+    height: 6.25rem;
+    background: #fff;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+}
+.container-btn-save {
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.btn-save {
+    width: 8.8125rem;
+    height: 3rem;
+    border-radius: 0.625rem;
+    border: 2px solid #006707;
+    background: #fff;
+    color: #006707;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-save-delete {
+    width: 8.8125rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    border: 2px solid #670002;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #670002;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Main content */
+.container-add-product-functions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.25rem;
+    padding: 3rem 5% 5rem 5%;
+    flex-grow: 1;
+    overflow: scroll;
+    color: #000;
+    gap: 3rem;
+}
+label {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.container-add-function {
+    display: flex;
+    flex-direction: column;
+}
+#options {
+    padding-left: 1rem;
+    font-size: 2.25rem;
+    width: 50.8125rem;
+    height: 4.375rem;
+    border-radius: 0.3125rem;
+    border: 2px solid #000;
+    background: #fff;
+}
+.input-title {
+    padding-left: 1rem;
+    font-size: 2.25rem;
+    width: 50.8125rem;
+    height: 4.375rem;
+    border-radius: 0.3125rem;
+    border: 2px solid #000;
+    background: #fff;
+}
+.peso-sign {
+    margin: 0;
+}
+.input-stock {
+    width: 8.375rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.3125rem;
+    border: 2px solid #000;
+}
+.container-input-number {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.25rem;
+    font-weight: 400;
+    align-items: center;
+    gap: 1rem;
+}
+.input-number::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input-number {
+    padding-left: 1rem;
+    font-size: 2.25rem;
+    width: 13.875rem;
+    height: 4.375rem;
+    border-radius: 0.3125rem;
+    border: 2px solid #000;
+    background: #fff;
+}
+.variation-control {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.input-variation {
+    width: 13.6875rem;
+    height: 3.125rem;
+    border-radius: 0.3125rem;
+    border: 2px solid #000;
+}
+.btn-add-variation {
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.variation-list {
+    padding: 0;
+    margin: 0.8rem 0 0 0;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+.variation {
+    min-width: 3.125rem;
+    height: 3.125rem;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    overflow: hidden;
+}
+.variation-content {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    padding: 0 1rem 0 1rem;
+}
+.variation:hover {
+    border: 2px solid #d80202;
+    background: rgba(255, 255, 255, 0.28);
+    cursor: pointer;
+}
+
+.move-variation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.25rem;
+    flex-shrink: 0;
+    border: none;
+    background: #d9d9d9;
+}
+.move-variation p {
+    height: 3.125rem;
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.move-variation-left {
+    left: 0;
+    border-left: none;
+}
+.move-variation-right {
+    right: 0;
+    border-right: none;
+}
+/* This is for photos */
+
+.photos-control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.photos-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.image-preview {
+    width: 13.9375rem;
+    height: 15.625rem;
+    flex-shrink: 0;
+    position: relative;
+}
+.photo-image-preview {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+.upload-photos {
+    width: auto;
+    height: 1.875rem;
+    color: #000;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.container-move-image {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.move-image {
+    width: 1.875rem;
+    height: 1.875rem;
+    border: 2px solid #000;
+    background: #d9d9d9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.move-image p {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.btn-delete-image {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    border: 3px solid #d80202;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-delete-image p {
+    color: #d80202;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

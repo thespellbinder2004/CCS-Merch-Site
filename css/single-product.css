@@ -1,0 +1,236 @@
+/* this is for modals */
+.modal {
+    width: 35.625rem;
+    height: 8.875rem;
+    border-radius: 0.9375rem;
+    border: 3px solid #a5a5a5;
+    background: #fff;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    font-size: 1.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -8;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.modal-active {
+    z-index: 99;
+    opacity: 100%;
+}
+.modal img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.container-product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 1rem 0 1rem;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+    gap: 5rem;
+    justify-content: center;
+}
+.container-product-photos {
+    display: flex;
+    flex-direction: row;
+}
+.container-product-current-photo {
+    width: 29.8125rem;
+    height: 35rem;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-current-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container-product-photos-choose {
+    display: flex;
+    padding: 0 1rem 1rem 1rem;
+    gap: 1rem;
+    flex-direction: column;
+    height: 35rem;
+    overflow: auto;
+}
+.product-photos-choose {
+    width: 6.25rem;
+    height: 6.25rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(70%);
+}
+.product-photos-choose-active {
+    scale: 110%;
+    filter: brightness(100%);
+}
+.product-photos-choose img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* ------------------------------------------------ */
+/* This is for Description */
+.container-product-details {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: auto;
+}
+/* row1 */
+.product-details-row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.product-details-header-icon {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+}
+.product-details-header-text {
+    margin: 0;
+}
+
+/* row2 */
+.product-details-row2 {
+    display: flex;
+    flex-direction: column;
+}
+.product-details-row2 * {
+    margin: 0;
+}
+
+/* row3 */
+.product-quantity-title {
+    margin: 0;
+}
+.product-quantity-control {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem 0 0.5rem;
+}
+.product-quantity-control * {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1.5px solid #a5a5a5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quantity-control-amount {
+    width: auto;
+    padding: 0 1rem 0 1rem;
+    min-width: 3rem;
+}
+.quantity-control-minus {
+    cursor: pointer;
+}
+.quantity-control-plus {
+    cursor: pointer;
+}
+/* row4 */
+.container-product-variation {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.product-variation-header {
+    margin: 0;
+}
+.product-variation {
+    font-size: 0.8rem;
+    height: 2rem;
+    min-width: 2rem;
+    background: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 0.5rem 0 0.5rem;
+    cursor: pointer;
+}
+.product-variation.active {
+    transform: scale(1.1);
+    border: solid 0.1rem;
+}
+.btn-product-add-to-cart {
+    width: 18.75rem;
+    height: 3.5625rem;
+    border-radius: 0.9375rem;
+    background: #9b0808;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 1151px) {
+    .container-product-photos {
+        flex-direction: column-reverse;
+    }
+    .container-product-photos-choose {
+        width: 29.8125rem;
+        flex-direction: row;
+        padding: 0;
+        height: auto;
+    }
+}
+@media (max-width: 523px) {
+    .container-product-details {
+        font-size: 1.1rem;
+    }
+    .container-product-current-photo {
+        width: 23.85rem;
+        height: 28rem;
+    }
+    .container-product-photos-choose {
+        display: flex;
+        width: 23.85rem;
+    }
+    .product-photos-choose {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+}
+@media (max-width: 430px) {
+    .container-product-current-photo {
+        width: 17.8875rem;
+        height: 21rem;
+    }
+    .container-product-photos-choose {
+        display: flex;
+        width: 17.8875rem;
+    }
+    .product-photos-choose {
+        width: 6rem;
+        height: 6rem;
+    }
+}

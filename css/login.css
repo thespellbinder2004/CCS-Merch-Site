@@ -1,0 +1,101 @@
+* {
+    font-family: Poppins;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 1.25rem;
+}
+
+form {
+    padding: 1rem 0 1rem 0;
+    border: 2px solid #ababab;
+    background: #fff;
+    width: 40.625rem;
+    height: 32.5rem;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.red-hawks-logo {
+    width: 5rem;
+    height: 5rem;
+}
+#ccs-logo-text {
+    font-family: "Saira Stencil One", Courier, monospace;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.container-container-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    gap: 2rem;
+}
+.container-input {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login-input {
+    padding: 0 1rem 0 1rem;
+    width: 100%;
+    height: 3.6875rem;
+    border-radius: 0.3125rem;
+    border: 1px solid #ababab;
+    background: #fff;
+    overflow: hidden;
+}
+#password-input {
+    padding-right: 3.5rem;
+}
+.btn-login {
+    border-radius: 0.9375rem;
+    background: #9b0808;
+    width: 60%;
+    height: 3.5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: 0;
+    margin-bottom: 1rem;
+}
+.btn-show-password {
+    position: absolute;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    cursor: pointer;
+}
+.container-input-password {
+    position: relative;
+}
